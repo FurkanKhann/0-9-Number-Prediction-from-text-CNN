@@ -1,92 +1,60 @@
-<h1>0-9-Number-Prediction-from-text-CNN</h1>
-<h2>Project Description</h2>
-0-9-Number-Prediction-from-text-CNN is a machine learning project that uses Convolutional Neural Networks (CNNs) to predict numbers (0-9) from textual data. This project provides an efficient method to interpret numerical data from text, which can be useful in various applications such as natural language processing, data extraction, and more.
+<div align='center'>
 
-<h2>Table of Contents</h2>
-1-Installation<br>
-2-Usage<br>
-3-Features<br>
-4-Contributing<br>
-5-Contact<br>
-6-Installation<br>
-To get started with the project, follow these steps:
+<h1>Deep Learning</h1>
+<p>0-9-Number-Prediction-from-text-CNN is a machine learning project that uses Convolutional Neural Networks (CNNs) to predict numbers (0-9) from textual data. This project provides an efficient method to interpret numerical data from text, which can be useful in various applications such as natural language processing, data extraction, and more.</p>
+
+<h4> <span> · </span> <a href="https://github.com/FurkanKhann/0-9-Number-Prediction-from-text-CNN/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/FurkanKhann/0-9-Number-Prediction-from-text-CNN/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/FurkanKhann/0-9-Number-Prediction-from-text-CNN/issues"> Request Feature </a> </h4>
+
+
+</div>
+
+# :notebook_with_decorative_cover: Table of Contents
+
+- [About the Project](#star2-about-the-project)
+- [Contributing](#wave-contributing)
+- [Contact](#handshake-contact)
+
+
+## :star2: About the Project
+
+### :camera: Screenshots
+<div align="center"> <a href=""><img src="https://i.postimg.cc/HsYPz3Wp/Screenshot-19.png" alt='image' width='800'/></a> </div>
+<div align="center"> <a href=""><img src="https://i.postimg.cc/44m5B3jS/Screenshot-20.png" alt='image' width='800'/></a> </div>
+
+
+
+## :toolbox: Getting Started
+
+### :gear: Installation
 
 Clone the repository:
+```bash
+git clone https://github.com/your-username/0-9-Number-Prediction-from-text-CNN.git cd 0-9-Number-Prediction-from-text-CNN
+```
 
-bash
-Copy code
-git clone https://github.com/FurkanKhann/0-9-Number-Prediction-from-text-CNN.git
-cd 0-9-Number-Prediction-from-text-CNN
-Set up a virtual environment (optional but recommended):
 
-bash
-Copy code
-python -m venv env
-source env/bin/activate   # On Windows, use `env\Scripts\activate`
-Install the required dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-To use the project, follow these steps:
+### :triangular_flag_on_post: Deployment
 
 Upload Test Images:
+```bash
 Upload your test images to Google Colab. Copy the paths of the uploaded images and paste them into the list named testimg.
-
+```
 Run the Code in Colab:
+```bash
 Paste the following code in a Google Colab notebook and execute it:
+```
 
-python
-Copy code
-import tensorflow as tf
-from tensorflow.keras.models import load_model
-import numpy as np
-from PIL import Image
-import matplotlib.pyplot as plt
 
-# Load the pre-trained model
-model = load_model('path_to_your_model.h5')
+## :wave: Contributing
 
-# List of test images
-testimg = ['path_to_image1', 'path_to_image2', 'path_to_image3']
+<a href="https://github.com/FurkanKhann/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
 
-# Function to prepare the image
-def prepare_image(image_path):
-    img = Image.open(image_path).convert('L')
-    img = img.resize((28, 28))
-    img = np.array(img)
-    img = img / 255.0
-    img = img.reshape(1, 28, 28, 1)
-    return img
+Contributions are always welcome!
 
-# Predict and display results
-for img_path in testimg:
-    img = prepare_image(img_path)
-    prediction = model.predict(img)
-    predicted_number = np.argmax(prediction)
-    print(f'The predicted number for {img_path} is: {predicted_number}')
-    plt.imshow(Image.open(img_path))
-    plt.title(f'Predicted Number: {predicted_number}')
-    plt.show()
-View the Results:
-The results, including predictions and images, will be displayed within the Colab notebook. For a visual reference, you can view a screenshot of the results here.
+see `contributing.md` for ways to get started
 
-Features
-Predict numbers (0-9) from text using CNN.
-Easy integration with Google Colab for quick testing and visualization.
-Efficient preprocessing and prediction pipeline.
-Contributing
-Contributions are welcome! Please follow these steps to contribute:
+## :handshake: Contact
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes.
-Commit your changes (git commit -m 'Add some feature').
-Push to the branch (git push origin feature-branch).
-Open a Pull Request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Furkan Khan - - khanfurkan575@gmail.com
 
-Contact
-For questions or support, please contact [your-email@example.com].
+Project Link: [https://github.com/FurkanKhann](https://github.com/FurkanKhann)
