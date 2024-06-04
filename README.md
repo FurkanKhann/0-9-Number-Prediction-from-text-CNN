@@ -1,6 +1,6 @@
 <div align='center'>
 
-<h1>Deep Learning</h1>
+<h1>Deep Learning 0-9 Number Prediction</h1>
 <p>0-9-Number-Prediction-from-text-CNN is a machine learning project that uses Convolutional Neural Networks (CNNs) to predict numbers (0-9) from textual data. This project provides an efficient method to interpret numerical data from text, which can be useful in various applications such as natural language processing, data extraction, and more.</p>
 
 <h4> <span> · </span> <a href="https://github.com/FurkanKhann/0-9-Number-Prediction-from-text-CNN/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/FurkanKhann/0-9-Number-Prediction-from-text-CNN/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/FurkanKhann/0-9-Number-Prediction-from-text-CNN/issues"> Request Feature </a> </h4>
