@@ -2,14 +2,13 @@
 <h2>Project Description</h2>
 0-9-Number-Prediction-from-text-CNN is a machine learning project that uses Convolutional Neural Networks (CNNs) to predict numbers (0-9) from textual data. This project provides an efficient method to interpret numerical data from text, which can be useful in various applications such as natural language processing, data extraction, and more.
 
-<li>Table of Contents</li>
-Installation
-Usage
-Features
-Contributing
-License
-Contact
-Installation
+<h2>Table of Contents</h2>
+1-Installation
+2-Usage
+3-Features
+4-Contributing
+5-Contact
+6-Installation
 To get started with the project, follow these steps:
 
 Clone the repository:
